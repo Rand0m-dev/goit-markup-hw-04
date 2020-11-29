@@ -95,14 +95,15 @@ a {
 }
 
 .hero {
-  min-width: 1600px;
-  text-align: center;
-  background-color: #c4c4c4;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 94px;
+  background-color: #c4c4c4;
   background-image: url('../images/Overlay.png'), url('../images/hero.jpg');
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  text-align: center;
 }
 
 .hero h1 {
@@ -155,6 +156,20 @@ a {
 .advantages .list-item {
   margin-right: 30px;
   width: 270px;
+}
+
+.advantages .icon-advantages {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+}
+
+.advantages .block-icon {
+  display: flex;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
 }
 
 .advantages .list-item:last-child {
@@ -213,6 +228,9 @@ a {
 
 .about {
   background-color: #f5f4fa;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about h2 {
@@ -233,14 +251,15 @@ a {
 .about .list-item {
   display: flex;
   margin-top: 0px;
-  margin-bottom: 0px;
   padding-left: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 94px;
 }
 
 .about .item {
   margin-right: 30px;
+  font-size: 0px;
   background-color: var(--white-color);
-  margin-bottom: 94px;
 }
 
 .about .item:last-child {
@@ -253,7 +272,7 @@ a {
 }
 
 .about h3 {
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-style: normal;
@@ -266,8 +285,7 @@ a {
 
 .about p {
   margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 
   color: var(--primari-text-color);
 
@@ -279,8 +297,86 @@ a {
   letter-spacing: 0.03em;
 }
 
+.about .icon-block {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.about .icon-about {
+  display: flex;
+  margin-left: 10px;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: none;
+  color: #afb1b8;
+}
+
+.about .icon-about:first-child {
+  margin-left: 32px;
+}
+
+.about .icon-about:hover,
+.about .icon-about:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.about .icon {
+  fill: currentColor;
+  margin: auto;
+}
+
+.clients h2 {
+  margin: 0px;
+  padding-top: 94px;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients .block-clients {
+  display: flex;
+  padding-bottom: 94px;
+  justify-content: space-between;
+}
+
+.clients .btn-client {
+  display: flex;
+  padding: 0px;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #afb1b8;
+}
+
+.clients .icon-client {
+  fill: currentColor;
+  margin: auto;
+}
+
+.clients .btn-client:hover,
+.clients .btn-client:focus {
+  border: 1px solid #2196f3;
+  color: #2196f3;
+}
+
 .footer {
   background-color: #2f303a;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer span {
@@ -335,6 +431,56 @@ a {
 
 .address .link:last-child {
   margin-bottom: 60px;
+}
+
+.block-footer {
+  display: flex;
+}
+
+.footer .block-social {
+  font-size: 0px;
+  width: 206px;
+  height: 80px;
+  margin-top: 72px;
+  margin-left: 70px;
+}
+
+.block-social h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.block-social .icon-about {
+  display: inline-flex;
+  color: var(--white-color);
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.block-social .icon-about:hover,
+.block-social .icon-about:focus {
+  background: #2196f3;
+}
+
+.block-social .icon-about:last-child {
+  margin-right: 0px;
+}
+
+.block-social .icon {
+  fill: currentColor;
+  margin: auto;
 }
 
 .caption {
@@ -393,6 +539,11 @@ a {
   width: 370px;
   background-color: var(--white-color);
   font-size: 0;
+}
+
+.galery .item:hover,
+.galery .item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .galery .item:nth-child(3n + 3) {
